@@ -1,0 +1,125 @@
+[
+  {
+    "line": 8,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-11T15:03:59.299Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Buscar um usuário existente na API JsonPlaceHolder",
+        "description": "",
+        "id": "criar-e-editar-contas-de-usuários;buscar-um-usuário-existente-na-api-jsonplaceholder",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 27000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "que possuo um token jsonPlaceHolder válido",
+            "match": {
+              "location": "steps.JsonPlaceHolderSteps.quePossuoUmTokenJsonPlaceHolderVálido()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "output": [
+              "*************Dados Enviados no Request*************",
+              "GET https://jsonplaceholder.typicode.com/posts/1",
+              "Body: \nnull",
+              "*******Dados Recebidos*******",
+              "Status Code 200",
+              "Payload recebido: \n{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\n}",
+              "Tempo de resposta: 980000"
+            ],
+            "result": {
+              "duration": 2129000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "eu enviar uma requisicao deste usuário",
+            "match": {
+              "location": "steps.JsonPlaceHolderSteps.envio_um_request_com_dados_válidos()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1049000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "os dados do usuário desta api devem ser retornados",
+            "match": {
+              "location": "steps.JsonPlaceHolderSteps.os_dados_do_usuário_desta_api_devem_ser_retornados()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "o status code da requisição deve ser 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "steps.JsonPlaceHolderSteps.o_status_code_da_requisição_deve_ser(java.lang.Integer)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@JsonPlaceHolder"
+          },
+          {
+            "name": "@getPlace"
+          }
+        ]
+      }
+    ],
+    "name": "Criar e editar contas de usuários",
+    "description": "  Eu como Administrador do sistema, quero cadastrar, editar e excluir usuários no sistema",
+    "id": "criar-e-editar-contas-de-usuários",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/Features/JsonPlaceHolder.feature",
+    "tags": [
+      {
+        "name": "@JsonPlaceHolder",
+        "type": "Tag",
+        "location": {
+          "line": 7,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
